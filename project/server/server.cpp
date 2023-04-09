@@ -6,7 +6,7 @@
 #include <sys/stat.h>
 #include <sys/wait.h>
 #include <unistd.h>
-
+#include <pthread.h>
 
 #define SERVER_ADRESS "127.0.0.1"
 #define SERVER_PORT 5002

@@ -12,6 +12,10 @@ const int MESSAGE_MEMORY = 1024;
 
 int main(int argc, char *argv[])
 {
+    if(argc < 1) {
+        perror("Требуется дополнительный аргумент - имя файла");
+        exit(-1);
+    }
     char buf[MESSAGE_MEMORY];
     FILE *fp;
     int sock;
